@@ -32,9 +32,9 @@ import kotlinx.android.synthetic.main.activity_main.*
              TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
                  Log.d("UI_PARTS", "$hourOfDay:$minute")
 
-                 if (hourOfDay <= 2 && hourOfDay <= 9) {
+                 if (hourOfDay >= 2 && hourOfDay <= 9) {
                      tv1.setText("おはよう")
-                 } else if (hourOfDay <= 10 && hourOfDay <= 17) {
+                 } else if (hourOfDay >= 10 && hourOfDay <= 17) {
                      tv1.setText("こんにちは")
                  } else {
                      tv1.setText("こんばんは")
